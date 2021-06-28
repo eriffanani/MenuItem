@@ -1,0 +1,3 @@
+rootProject.name = "MenuItemLibrary"
+include ':app'
+include ':menuitem'

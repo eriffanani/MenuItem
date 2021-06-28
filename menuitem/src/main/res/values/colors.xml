@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorCardShadow">#C8C0B9</color>
+    <color name="colorRipple">#CCA0A0A0</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>
