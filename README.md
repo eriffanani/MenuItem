@@ -2,16 +2,14 @@
 This is my first library, the use of this library is very simple, just create menu items where there are only square and circular backgrounds, icons, and text as menu titles.
 
 ## Installation
+#### build.gradle(Project)
 ```
-repositories {
-  maven { url 'https://jitpack.io' }
-}
+maven {url 'https://jitpack.io'}
 ```
 
+#### build.gradle(Module)
 ```
-dependencies {
-  implementation 'com.github.eriffanani:MenuItem:0.0.3'
-}
+implementation 'com.github.eriffanani:MenuItem:0.0.3'
 ```
 
 ## How to use
