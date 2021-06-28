@@ -113,21 +113,21 @@ class MenuItem : View {
         if (theme != null) {
             val typedArray = theme.obtainStyledAttributes(
                 attrs,
-                R.styleable.SimpleMenu, 0, 0
+                R.styleable.MenuItem, 0, 0
             )
             try {
-                menuTitle = typedArray.getString(R.styleable.SimpleMenu_title).toString()
+                menuTitle = typedArray.getString(R.styleable.MenuItem_title).toString()
                 val attrID = typedArray.getResourceId(
-                    R.styleable.SimpleMenu_icon,
+                    R.styleable.MenuItem_icon,
                     R.drawable.ic_shopping_cart_white
                 )
                 iconRes = ContextCompat.getDrawable(context, attrID)
                     ?: throw IllegalArgumentException("Cannot load drawable $imgID")
 
-                colorMenu = typedArray.getColor(R.styleable.SimpleMenu_background_color, colorMenu)
+                colorMenu = typedArray.getColor(R.styleable.MenuItem_background_color, colorMenu)
                 paintImage.color = colorMenu
 
-                shape = typedArray.getInteger(R.styleable.SimpleMenu_shape, shape)
+                shape = typedArray.getInteger(R.styleable.MenuItem_shape, shape)
 
                 setWidth()
                 createMenu()
