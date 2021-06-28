@@ -1,4 +1,5 @@
 # Simple Menu Item
+This is my first library, the use of this library is very simple, just create menu items where there are only square and circular backgrounds, icons, and text as menu titles.
 
 ## Installation
 ```
