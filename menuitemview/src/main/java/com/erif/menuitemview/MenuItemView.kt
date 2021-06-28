@@ -1,4 +1,4 @@
-package com.erif.menuitem
+package com.erif.menuitemview
 
 import android.content.Context
 import android.content.res.Resources
@@ -11,7 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 
-class MenuItem : View {
+class MenuItemView : View {
 
     private lateinit var paintImage: Paint
     private lateinit var rectF: RectF
@@ -116,18 +116,18 @@ class MenuItem : View {
                 R.styleable.MenuItem, 0, 0
             )
             try {
-                menuTitle = typedArray.getString(R.styleable.MenuItem_title).toString()
+                menuTitle = typedArray.getString(R.styleable.MenuItemView_title).toString()
                 val attrID = typedArray.getResourceId(
-                    R.styleable.MenuItem_icon_menu,
+                    R.styleable.MenuItemView_icon_menu,
                     R.drawable.ic_shopping_cart_white
                 )
                 iconRes = ContextCompat.getDrawable(context, attrID)
                     ?: throw IllegalArgumentException("Cannot load drawable $imgID")
 
-                colorMenu = typedArray.getColor(R.styleable.MenuItem_background_color, colorMenu)
+                colorMenu = typedArray.getColor(R.styleable.MenuItemView_background_color, colorMenu)
                 paintImage.color = colorMenu
 
-                shape = typedArray.getInteger(R.styleable.MenuItem_shape, shape)
+                shape = typedArray.getInteger(R.styleable.MenuItemView_shape, shape)
 
                 setWidth()
                 createMenu()
