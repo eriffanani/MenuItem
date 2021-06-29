@@ -3,17 +3,17 @@ This is my first library, the use of this library is very simple, just create me
 
 ## Installation
 #### build.gradle(Project)
-```
+```kotlin
 maven {url 'https://jitpack.io'}
 ```
 
 #### build.gradle(Module)
-```
+```kotlin
 implementation 'com.github.eriffanani:MenuItem:0.0.3'
 ```
 
 ## How to use
-```
+```xml
 <com.erif.menuitem.MenuItem
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
